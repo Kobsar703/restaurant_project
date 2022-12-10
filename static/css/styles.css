@@ -1,0 +1,9 @@
+body {
+    margin: 30px;
+    background-color: rgba(182,134,76,0.59);
+}
+
+.link-to-page {
+    float: right;
+    margin: 0 2px 0 2px;
+}

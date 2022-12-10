@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Dish types
+  <a href="{% url 'kitchen:dish-types-create' %}" class="btn btn-primary float-right">Create</a>
+  </h1>
+  <ul>
+
+  </ul>
+  {% if dish_type_list %}
+    <table class="table">
+      <tr>
+        <th>Name</th>
+        <th>Action</th>
+      </tr>
+      {% for dish_type in dish_type_list %}
+        <tr>
+        <td>{{ dish_type.name }}</td>
+        <td>
+          <a href="{% url 'kitchen:dish-types-update' pk=dish_type.id %} " >Update</a> /
+          <a href="{% url 'kitchen:dish-types-delete' pk=dish_type.id %}">Delete</a>
+        </td>
+        </tr>
+      {% endfor %}
+    </table>
+    {% else %}
+    <p>Try to add some, I can't see one </p>
+  {% endif %}
+{% endblock %}
