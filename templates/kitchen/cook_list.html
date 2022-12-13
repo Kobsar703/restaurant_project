@@ -33,4 +33,7 @@
     {% else %}
     <p>Try to add some, I can't see one </p>
   {% endif %}
+  {% block pagination %}
+    {% include "includes/pagination.html" %}
+  {% endblock %}
 {% endblock %}

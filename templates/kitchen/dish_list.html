@@ -31,17 +31,28 @@
     {% else %}
     <p>Try to add some, I can't see one </p>
   {% endif %}
+
+  {% block pagination %}
+      {% include "includes/pagination.html" %}
+  {% endblock %}
+
   <div class="home_sections">
     <article class="section">
-      <h3 class="block_title">Section 1</h3>
-      <p>Contrary to popular belief, Lorem Ipsum is not simply random
-        text. It has roots in a piece of classical Latin literature
+      <h3 class="block_title">Dish types</h3>
+      <p>Explore dish types that can be applied to creation of the dish.
+        Add some or modify if needed
+      </p>
+      <p class="explore">
+        <a href="{% url 'kitchen:dish-types-list' %}" class="btn btn-primary">Explore</a>
       </p>
     </article>
     <article class="section">
-      <h3 class="block_title">Section 2</h3>
-      <p>Contrary to popular belief, Lorem Ipsum is not simply random
-        text. It has roots in a piece of classical Latin literature
+      <h3 class="block_title">Ingredients</h3>
+      <p>Explore ingredientsthat can be applied to creation of the dish.
+        Add some or modify if needed
+      </p>
+      <p class="explore">
+        <a href="{% url 'kitchen:ingredients-list' %}" class="btn btn-primary">Explore</a>
       </p>
     </article>
   </div>

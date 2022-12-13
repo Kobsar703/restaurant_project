@@ -62,3 +62,50 @@ body {
     border-radius: 10px;
     background-color: rgba(29,0,215,0.18);
 }
+
+.block_title {
+    text-align: center;
+}
+
+.explore {
+    text-align: center;
+}
+
+.footer-basic {
+  background-color: rgba(29,0,215,0.61);
+  line-height: var(--footer-height);
+  color: #fff;
+  text-align: center;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:0;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 14px;
+  opacity:0.75;
+  background-color: inherit;
+  color: #fff;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  text-align:center;
+  font-size:18px;
+  color:#aaa;
+  margin-left: 30px;
+}
+
