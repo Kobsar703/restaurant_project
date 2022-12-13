@@ -1,9 +1,64 @@
 body {
-    margin: 10px;
+    margin: 0;
     background-color: rgba(215,157,90,0.28);
+    --header-height: 70px;
+    --footer-height: 70px;
 }
 
 .link-to-page {
     float: right;
     margin: 0 2px 0 2px;
+}
+
+.header {
+  background-color: rgba(29,0,215,0.61);
+  color: #fff;
+  text-align: center;
+  line-height: var(--header-height);
+}
+
+.logo {
+    border: 1px solid white;
+    padding: 3px;
+    color: white;
+    margin-left: 20px;
+    background-color: transparent;
+}
+
+.moto {
+    text-align: center;
+    color: white;
+    font-size: 1.45rem;
+}
+
+.login {
+    margin-top: 15px;
+}
+
+.row {
+    margin-right: 0;
+}
+
+.footer {
+  background-color: rgba(29,0,215,0.61);
+  line-height: var(--footer-height);
+  color: #fff;
+  text-align: center;
+}
+
+.main {
+  min-height: calc(95vh - var(--header-height) - var(--footer-height));
+  margin: 20px 0;
+}
+
+.home_sections {
+    display: flex;
+    margin: 0;
+}
+
+.section {
+    margin: 0 5px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    background-color: rgba(29,0,215,0.18);
 }
