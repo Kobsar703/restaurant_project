@@ -11,6 +11,12 @@ body {
     border: 1px solid black;
 }
 
+.btn-primary:hover {
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+
 .btn-login {
     margin-top: 20px;
 }
@@ -98,7 +104,7 @@ body {
 
 .home_sections {
     display: flex;
-    margin: 0;
+    margin: 70px 0 0 0;
 }
 
 .content {
@@ -110,7 +116,7 @@ body {
 }
 
 .section {
-    margin: 5px 10px;
+    margin: 5px 10px 5px 10px;
     padding: 5px 20px;
     border-radius: 10px;
     background-color: rgba(0,0,0,0.44);
