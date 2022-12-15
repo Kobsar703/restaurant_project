@@ -1,43 +1,104 @@
-{% extends "base.html" %}
+{#{% extends "base.html" %}#}
+{##}
+{#{% block content %}#}
+{#  <div class="home_sections">#}
+{#    <article class="section">#}
+{#      <h3 class="block_title">WE STARTED BAKING BREAD IN 2009 IN THE WOOD OVEN AT ROMAN'S.</h3>#}
+{#      <p>After dinner service, we would make a fire.#}
+{#        Early in the morning, our baker Austin Hall#}
+{#        would come in, rake out the coals and bake bread#}
+{#        for the day. This bread became a part of Roman’s at#}
+{#        every service and staff meal. Soon the chefs at Marlow#}
+{#        & Sons and Diner wanted to bring the same quality and#}
+{#        integrity to the bread they served.#}
+{#      <p>#}
+{#      We expanded bread production to our own space in Greenpoint,#}
+{#      and now supply the bread served at all of our restaurants#}
+{#      and others around the city. You can also purchase loaves#}
+{#      to take home at Marlow & Daughters, Stranger Wines, Roman’s,#}
+{#      and Achilles Heel, as well as at nine NYC Greenmarkets.#}
+{##}
+{#    </p>#}
+{##}
+{#      </p>#}
+{#    </article>#}
+{#    <article class="section">#}
+{#      <h3 class="block_title">Section 2</h3>#}
+{#      <p>#}
+{#      </p>#}
+{#    </article>#}
 
-{% block content %}
-  <div class="home_sections">
-    <article class="section">
-      <h3 class="block_title">Section 1</h3>
-      <p>Contrary to popular belief, Lorem Ipsum is not simply random
-        text. It has roots in a piece of classical Latin literature
-        from 45 BC, making it over 2000 years old. Richard McClintock,
-        a Latin professor at Hampden-Sydney College in Virginia,
-        looked up one of the more obscure Latin words, consectetur,
-        from a Lorem Ipsum passage, and going through the cites of
-        the word in classical literature, discovered the undoubtable
-        source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33
-      </p>
-    </article>
-    <article class="section">
-      <h3 class="block_title">Section 2</h3>
-      <p>Contrary to popular belief, Lorem Ipsum is not simply random
-        text. It has roots in a piece of classical Latin literature
-        from 45 BC, making it over 2000 years old. Richard McClintock,
-        a Latin professor at Hampden-Sydney College in Virginia,
-        looked up one of the more obscure Latin words, consectetur,
-        from a Lorem Ipsum passage, and going through the cites of
-        the word in classical literature, discovered the undoubtable
-        source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33
-      </p>
-    </article>
-    <article class="section">
-      <h3 class="block_title">Section 3</h3>
-      <p>Contrary to popular belief, Lorem Ipsum is not simply random
-        text. It has roots in a piece of classical Latin literature
-        from 45 BC, making it over 2000 years old. Richard McClintock,
-        a Latin professor at Hampden-Sydney College in Virginia,
-        looked up one of the more obscure Latin words, consectetur,
-        from a Lorem Ipsum passage, and going through the cites of
-        the word in classical literature, discovered the undoubtable
-        source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33
-      </p>
-    </article>
-  </div>
-{% endblock %}
+{#  </div>#}
+{#{% endblock %}#}
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% block title %}<title>Restaurant</title>{% endblock %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+          integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Add additional CSS in static file -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="icon" href="{% static 'img/logo_title.png' %}">
+</head>
+
+<body>
+  {% block header %}
+      {% include "includes/header.html" %}
+  {% endblock %}
+  <main class="main container1">
+    <div class="container-fluid">
+      <div class="row">
+          <div class="col-sm-2">
+
+              {% block sidebar %}
+                  {% include "includes/sidebar.html" %}
+              {% endblock %}
+          </div>
+
+          <div class="col-sm-10 ">
+            <article class="section1">
+            <h3 class="block_title">WE STARTED BAKING BREAD IN 2009 IN THE WOOD OVEN AT ROMAN'S.</h3>
+            <p>After dinner service, we would make a fire.
+              Early in the morning, our baker Austin Hall
+              would come in, rake out the coals and bake bread
+              for the day. This bread became a part of Roman’s at
+              every service and staff meal. Soon the chefs at Marlow
+              & Sons and Diner wanted to bring the same quality and
+              integrity to the bread they served.
+            <p>
+            We expanded bread production to our own space in Greenpoint,
+            and now supply the bread served at all of our restaurants
+            and others around the city. You can also purchase loaves
+            to take home at Marlow & Daughters, Stranger Wines, Roman’s,
+            and Achilles Heel, as well as at nine NYC Greenmarkets.
+
+            </p>
+            </article>
+          </div>
+      </div>
+    </div>
+
+  </main>
+  <footer class="footer-basic">
+    <div class="social">
+      <a href="#"><i class="icon ion-social-instagram"></i></a>
+      <a href="#"><i class="icon ion-social-snapchat"></i></a>
+      <a href="#"><i class="icon ion-social-twitter"></i></a>
+      <a href="#"><i class="icon ion-social-facebook"></i></a>
+      <span class="copyright">Mate Academy project © 2022</span>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+  </footer>
+</body>
+
+</html>
