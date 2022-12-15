@@ -77,6 +77,8 @@ WSGI_APPLICATION = "kitchen_service.wsgi.application"
 
 AUTH_USER_MODEL = "kitchen.Cook"
 
+LOGIN_REDIRECT_URL = ""
+
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 

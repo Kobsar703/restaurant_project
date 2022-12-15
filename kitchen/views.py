@@ -137,6 +137,7 @@ class CookList(generic.ListView):
 class CookCreate(generic.CreateView):
     model = Cook
     form_class = CookCreationForm
+    success_url = reverse_lazy("kitchen:cook-list")
 
 
 class CookDetail(generic.DetailView):
