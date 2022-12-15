@@ -1,15 +1,15 @@
 <header class="header">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-1">
+        <div class="col-sm-2">
           {% load static %}
           <img src="{% static 'img/logo_title.png' %}" width="60px" height="60px" class="logo" alt="Logo image in the header"/>
 
         </div>
-        <div class="col-sm-9">
+        <div class="col-sm-8">
           <span class="moto">WE LOVE LIVING DELICIOUS</span>
         </div>
-        <div class="col-sm-2">
+        <div class="col-sm-2 btn-login">
           {% if user.is_authenticated %}
             <a class="login btn btn-primary float-right" href="{% url 'logout'%}?next={{request.path}}">Logout</a>
           {% else %}
