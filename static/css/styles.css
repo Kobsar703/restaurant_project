@@ -11,13 +11,14 @@ body {
 
 .sidebar-decor {
     margin-top: 200px;
-    border-radius: 20px;
+    /*border-radius: 2.0rem;*/
 }
 
 .list-group-item {
     background-color: black;
     padding: 4px;
     margin: 0 40px;
+
 }
 
 .list-group-item:hover {
