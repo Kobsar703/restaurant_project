@@ -21,6 +21,13 @@ Python3 must be already installed
   pip install requirements.txt
   python manage.py runserver
 ```
+
+## Features
+
+- Assign user to dish excecution
+- Registration of user from login page
+- Search field
+
     
 ## Screenshots
 

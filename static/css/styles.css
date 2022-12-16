@@ -5,17 +5,13 @@ body {
     --footer-height: 70px;
 }
 
-
-
-
-
 .btn-login {
     margin-top: 20px;
 }
 
 .sidebar-decor {
     margin-top: 200px;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .list-group-item {
@@ -157,8 +153,6 @@ body {
     backgroung-repeat: repeat;
     background-size: cover;
 }
-
-
 
 .block_title {
     text-align: center;
