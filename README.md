@@ -6,7 +6,9 @@ Web framework to maintain workflow on the kitchen.
  also add some if you need previously registered as a user.
 
 
+## Deployed application
 
+[Restaurant project deployed to Render](https://restaurant-rcdw.onrender.com)
 
 
 ## Installation
